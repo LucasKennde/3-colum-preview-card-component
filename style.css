@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrapper{
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 920px;
+    height: auto;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 47.5px;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.card h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 10px;
+    color: #f2f2f2;
+}
+.card p{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.img-content{
+    height: 40px;
+    width: 64px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#sedan{
+    background-color: #E28625;
+}
+#sedan button{
+    color: #E28625;
+}
+#sedan .img-content{
+    background-image: url('./assets/image.png');
+}
+#suvs{
+    background-color: #006971;
+}
+#suvs button{
+    color: #006971;
+}
+#suvs .img-content{
+    background-image: url('./assets/Group3.png');
+}
+#luxury{
+    background-color: #004140;
+}
+#luxury button{
+    color: #004140;
+}
+#luxury .img-content{
+    background-image: url('./assets/Group4.png');
+}
+
+button{
+    max-width: 146px;
+    height: 48px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif;
+    cursor: pointer;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff !important;
+}
+
+@media screen and (max-width:430px) {
+    .container{
+        flex-direction: column;
+    }
+}
